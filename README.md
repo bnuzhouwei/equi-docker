@@ -3,7 +3,7 @@ Build better Web apps with CBSE by PaaS!
 
 ## Get Started
 
-The following bash can create an app whose web server and database server are both hosted in docker.
+* Install requirements:
 
 ```bash
 sudo su
@@ -13,6 +13,11 @@ rm -rf /usr/equi
 mv /tmp/equi-docker /usr/equi
 mkdir /usr/equi/tmp
 python /usr/equi/script/setup.py
+```
+
+* Create an app whose web server and database server are both hosted in docker:
+
+```bash
 python /usr/equi/script/app_create.py -appid 1 -appname app1 -server_name www.yourdomain.com -password password
 ```
 
@@ -26,6 +31,10 @@ Your can see the port with command:
 docker-compose ps -a
 ```
 
-You could create many apps in a server without conflict!
+- You could create many apps in a server without conflict:
+
+```bash
+python /usr/equi/script/app_create.py -appid 2 -appname app2 -server_name www.yourdomain2.com -password password2
+```
 
 Have fun!
