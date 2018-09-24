@@ -49,7 +49,7 @@ You can specify the appid, appname, server_name, and password your app by change
 
 When excuted, visit http://www.yourdomian.com to view the app. Of couse, you should first resolved the domain name to ip of the server. Otherwise your can visit http://yourserverip:10010 by ip and port!
 
-You can see the web server port and database server port with command:
+> You can see the web server port and database server port with command:
 
 ```bash
 docker-compose ps -a
@@ -57,9 +57,7 @@ docker-compose ps -a
 
 * Last, connect to the database server by database management tools(e.g. navicat, pgadmin) to create tables and views; login the develop platform by any browser(e.g. Chrome, Firfox, IE11+, Edge) to build web apps by assembling and integrating.
 
-Tips:
-
-You could create many apps in a server without conflict:
+> You could create many apps in a server without conflict:
 
 ```bash
 python /usr/equi/script/app_create.py -appid 2 -appname app2 -server_name www.yourdomain2.com -password password2
