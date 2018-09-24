@@ -19,7 +19,7 @@ A browser and a database tool can build the whole large web app:
   * [Microsoft Azure](https://azure.microsoft.com/), [Amazon AWS](https://aws.amazon.com/)
   * [阿里云](https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=jrx3bb1f), [腾讯云](https://cloud.tencent.com/redirect.php?redirect=1014&cps_key=3903997dfdf207961c180fc52fd875cf&from=console)
  
-* Second, install requirements with following scripts:
+* Second, login to the remote server by SSH client(e.g.[putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)), and install requirements with following scripts:
 
 ```bash
 sudo su
@@ -41,13 +41,13 @@ You can specify the appid, appname, server_name, and password your app by change
 
 When excuted, visit http://www.yourdomian.com to view the app. Of couse, you should first resolved the domain name to ip of the server. Otherwise your can visit http://yourserverip:10010 by ip and port!
 
-Your can see the web server port and database server port with command:
+You can see the web server port and database server port with command:
 
 ```bash
 docker-compose ps -a
 ```
 
-* Last, use database management tools, such as navicat and pgadmin, connect to the database server, and create tables and views.
+* Last, connect to the database server by database management tools(e.g. navicat, pgadmin) to create tables and views; login the develop platform by any browser(e.g. Chrome, Firfox, IE11+, Edge) to build web apps by assembling and integrating.
 
 Tips:
 
