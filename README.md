@@ -6,6 +6,7 @@ Build better Web apps with CBSE by PaaS!
 The following bash can create an app whose web server and database server are both hosted in docker.
 
 ```bash
+sudo su
 cd /tmp
 git clone https://github.com/equiclouds/equi-docker.git
 rm -rf /usr/equi
