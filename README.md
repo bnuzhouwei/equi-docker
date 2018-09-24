@@ -15,22 +15,15 @@ A browser and a database tool can build the whole large web app:
 
 ## GetStarted
 
-* First, buy a virtual server with Ubuntu Server 14.04/16.04/18.04 LTS X64 from any of the following cloud computing providers:
+* First, buy a virtual server with Ubuntu Server 16.04/18.04 LTS X64 from any of the following cloud computing providers:
   * [Microsoft Azure](https://azure.microsoft.com/), [Amazon AWS](https://aws.amazon.com/)
   * [阿里云](https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=jrx3bb1f), [腾讯云](https://cloud.tencent.com/redirect.php?redirect=1014&cps_key=3903997dfdf207961c180fc52fd875cf&from=console)
  
-* Second, login to the remote server by SSH client(e.g.[putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)), and install requirements.
-
-> If git is not installed, Use the following script to install git before install requirements:
-
-```bash
-apt-get update && apt-get install -y git
-```
-
-> Install requirements:
+* Second, login to the remote server by SSH client(e.g.[putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)), and install requirements:
 
 ```bash
 sudo su
+apt-get update && apt-get install git
 cd /tmp
 git clone https://github.com/equiclouds/equi-docker.git
 rm -rf /usr/equi
@@ -38,6 +31,8 @@ mv /tmp/equi-docker /usr/equi
 mkdir /usr/equi/tmp
 python /usr/equi/script/setup.py
 ```
+
+> If you are using Ubuntu Server 14.04 LTS X64, you should install git, docker-ce, docker-compose manually.
 
 * Third, Create an app whose web server and database server are both hosted in docker:
 
