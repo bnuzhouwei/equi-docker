@@ -17,6 +17,6 @@ python /usr/equi/script/app_create.py -appid 1 -appname app1 -server_name www.yo
 
 You can specify the appid, appname, server_name, and password your app by change the params in the last line of scripts above.
 
-When excuted, visit http://www.yourdomian.com to view the app. Of couse, you should first resolved the domain name to ip of the server. Otherwise your can visit http://yourid:10010 by ip and port!
+When excuted, visit http://www.yourdomian.com to view the app. Of couse, you should first resolved the domain name to ip of the server. Otherwise your can visit http://yourserverip:10010 by ip and port!
 
 Have fun!
