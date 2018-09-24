@@ -25,4 +25,6 @@ Your can see the port with command:
 docker-compose ps -a
 ```
 
+You could create many apps in a server without conflict!
+
 Have fun!
