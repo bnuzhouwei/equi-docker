@@ -23,6 +23,7 @@ A browser and a database tool can build the whole large web app:
 
 ```bash
 sudo su
+apt-get update && apt-get install -y git
 cd /tmp
 git clone https://github.com/equiclouds/equi-docker.git
 rm -rf /usr/equi
