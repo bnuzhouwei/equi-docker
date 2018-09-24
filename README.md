@@ -1,7 +1,19 @@
-# http://www.equiclouds.com/
+# [Equiclouds](http://www.equiclouds.com/)
+
+## Features
+
 Build better Web apps with CBSE by PaaS! 
 
-## Get Started
+A browser and a database tool can build the whole large web app:
+
+* Automatic Management Interface
+  * Automatically analyze data dictionaries, intelligently create data grids, rich custom configurations, dozens of form controls, comprehensive data validation, lightweight role workflows, powerful far wins Django admin backstage. Developers only focus on the Assembly and implementation of the components, without focusing on the development of the interface.
+* Component-based Development
+  * Component-based development provides a more organized reuse approach, the concept of "assembling rather than coding, integrating rather than implementing" provides data-driven business artifacts to dramatically improve the development speed and software quality of Web applications, dramatically lowering costs through the development platform online configuration, assembly and development of artifacts.
+* Online Integrated Development Environment
+  * Anytime, anywhere online coding, automatic preservation of historical version, intelligent dynamic compilation, detailed debug logs, lazy loading execution, code complement full code folding, grammar highlighting, full-screen mode, adaptive content size. You only need Web browsers and database management tools to build Web applications.
+
+## GetStarted
 
 * Install requirements:
 
@@ -25,13 +37,15 @@ You can specify the appid, appname, server_name, and password your app by change
 
 When excuted, visit http://www.yourdomian.com to view the app. Of couse, you should first resolved the domain name to ip of the server. Otherwise your can visit http://yourserverip:10010 by ip and port!
 
-Your can see the port with command:
+Your can see the web server port and database server port with command:
 
 ```bash
 docker-compose ps -a
 ```
 
-- You could create many apps in a server without conflict:
+* Use database management tools, such as navicat and pgadmin, to build tables for your business.
+
+You could create many apps in a server without conflict:
 
 ```bash
 python /usr/equi/script/app_create.py -appid 2 -appname app2 -server_name www.yourdomain2.com -password password2
