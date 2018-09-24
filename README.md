@@ -21,7 +21,7 @@ A browser and a database tool can build the whole large web app:
  
 * Second, login to the remote server by SSH client(e.g.[putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)), and install requirements:
 
-> If you are using Ubuntu Server 14.04 LTS X64, you should install git, docker-ce, docker-compose manually before excuting the scripts.
+> If you are using Ubuntu Server 14.04 LTS X64, you should install git, docker-ce, docker-compose manually before excuting the scripts. Other Linux versions, please check the scripts and implements the setup scripts by yourself.
 
 ```bash
 sudo su
