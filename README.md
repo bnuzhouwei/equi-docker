@@ -57,4 +57,4 @@ You could create many apps in a server without conflict:
 python /usr/equi/script/app_create.py -appid 2 -appname app2 -server_name www.yourdomain2.com -password password2
 ```
 
-Have fun!
+It is the world's premier Web development platform. Without setting up or managing any infrastructure, you only need to log on to start working. The component-based cloud development platform changes the development mode of Web application, and can create high quality Web applications faster and better. Have fun!
