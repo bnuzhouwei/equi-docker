@@ -21,6 +21,8 @@ A browser and a database tool can build the whole large web app:
  
 * Second, login to the remote server by SSH client(e.g.[putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)), and install requirements:
 
+> If you are using Ubuntu Server 14.04 LTS X64, you should install git, docker-ce, docker-compose manually before excuting the scripts.
+
 ```bash
 sudo su
 apt-get update && apt-get install git
@@ -31,8 +33,6 @@ mv /tmp/equi-docker /usr/equi
 mkdir /usr/equi/tmp
 python /usr/equi/script/setup.py
 ```
-
-> If you are using Ubuntu Server 14.04 LTS X64, you should install git, docker-ce, docker-compose manually.
 
 * Third, Create an app whose web server and database server are both hosted in docker:
 
