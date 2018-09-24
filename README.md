@@ -19,7 +19,7 @@ A browser and a database tool can build the whole large web app:
 
 You should get a server with Ubuntu Server 14.04/16.04/18.04 LTS X64 from [Microsoft Azure](https://azure.microsoft.com/), [Amazon AWS](https://aws.amazon.com/), or [Aliyun](https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=jrx3bb1f).
 
-* Install requirements:
+* Second, install requirements with following scripts:
 
 ```bash
 sudo su
@@ -31,7 +31,7 @@ mkdir /usr/equi/tmp
 python /usr/equi/script/setup.py
 ```
 
-* Create an app whose web server and database server are both hosted in docker:
+* Third, Create an app whose web server and database server are both hosted in docker:
 
 ```bash
 python /usr/equi/script/app_create.py -appid 1 -appname app1 -server_name www.yourdomain.com -password password
@@ -47,7 +47,9 @@ Your can see the web server port and database server port with command:
 docker-compose ps -a
 ```
 
-* Use database management tools, such as navicat and pgadmin, to build tables for your business.
+* Last, use database management tools, such as navicat and pgadmin, connect to the database server, and create tables and views.
+
+Tips:
 
 You could create many apps in a server without conflict:
 
