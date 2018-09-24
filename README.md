@@ -15,6 +15,10 @@ A browser and a database tool can build the whole large web app:
 
 ## GetStarted
 
+* First, buy a virtual server.
+
+You should get a server with Ubuntu Server 14.04/16.04/18.04 LTS X64 from [Microsoft Azure](https://azure.microsoft.com/), [Amazon AWS](https://aws.amazon.com/), or [Aliyun](https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=jrx3bb1f).
+
 * Install requirements:
 
 ```bash
