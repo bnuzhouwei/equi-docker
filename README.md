@@ -19,4 +19,10 @@ You can specify the appid, appname, server_name, and password your app by change
 
 When excuted, visit http://www.yourdomian.com to view the app. Of couse, you should first resolved the domain name to ip of the server. Otherwise your can visit http://yourserverip:10010 by ip and port!
 
+Your can see the port with command:
+
+```bash
+docker-compose ps -a
+```
+
 Have fun!
