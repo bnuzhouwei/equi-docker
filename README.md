@@ -52,6 +52,17 @@ When excuted, visit http://www.yourdomian.com to view the app. Of couse, you sho
 docker ps -a
 ```
 
+* Forth, automantically start web and database services at system startup.
+
+```bash
+vim /etc/rc.local
+```
+
+```
+sudo python /usr/equi/script/start.py
+exit 0
+```
+
 * Last, connect to the database server by database management tools(e.g. navicat, pgadmin) to create tables and views; login the develop platform by any browser(e.g. Chrome, Firfox, IE11+, Edge) to build web apps by assembling and integrating.
 
 > Database Connection Parameters:
