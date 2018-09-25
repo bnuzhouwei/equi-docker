@@ -88,7 +88,7 @@ Before call setup.py, you can edit the Dockerfile to customize docker images.
 vim /usr/equi/image/db/Dockerfile
 ```
 
-Change parameters of localedef to change default collation and timezone.
+Modify it to change default collation and timezone.
 
 ```
 FROM postgres:10
@@ -102,9 +102,7 @@ ENV LANG zh_CN.UTF-8
 vim /usr/equi/image/web/Dockerfile
 ```
 
-* sed: command to change sources of apt-get so that server can use mirror to speed up downloads.
-* apt-get: install requirements for docker image. All the package are required.
-* ln: change timezone.
+Modify it to change sources and timezone.
 
 ```bash
 FROM ubuntu:18.04
@@ -114,5 +112,9 @@ RUN apt-get install -y ttf-wqy-microhei libgdiplus locales tzdata sqlite
 RUN rm -rf /var/lib/apt/lists/*
 RUN rm /etc/localtime && ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 ```
+
+* sed: command to change sources of apt-get so that server can use mirror to speed up downloads.
+* apt-get: install requirements for docker image. All the package are required.
+* ln: change timezone.
 
 
