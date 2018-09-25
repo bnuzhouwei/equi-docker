@@ -80,9 +80,9 @@ It is the world's premier Web development platform. Without setting up or managi
 
 ## Advanced
 
-### Customize Docker Image for Database Server
+Before call setup.py, you can edit the Dockerfile to customize docker images.
 
-Before call setup.py, you can edit the Dockerfile,
+### Customize Docker Image for Database Server
 
 ```bash
 vim /usr/equi/image/db/Dockerfile
@@ -95,4 +95,24 @@ FROM postgres:10
 RUN localedef -i zh_CN -c -f UTF-8 -A /usr/share/locale/locale.alias zh_CN.UTF-8
 ENV LANG zh_CN.UTF-8
 ```
+
+### Customize Docker Image for Web Server
+
+```bash
+vim /usr/equi/image/web/Dockerfile
+```
+
+* sed: command to change sources of apt-get so that server can use mirror to speed up downloads.
+* apt-get: install requirements for docker image. All the package are required.
+* ln: change timezone.
+
+```bash
+FROM ubuntu:18.04
+RUN sed -i 's/archive.ubuntu.com/mirrors.aliyun.com/' /etc/apt/sources.list
+RUN apt-get update -y
+RUN apt-get install -y ttf-wqy-microhei libgdiplus locales tzdata sqlite
+RUN rm -rf /var/lib/apt/lists/*
+RUN rm /etc/localtime && ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+```
+
 
