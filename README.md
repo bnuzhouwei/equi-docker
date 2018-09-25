@@ -36,16 +36,15 @@ mkdir /usr/equi/tmp
 python /usr/equi/script/setup.py
 ```
 
-* Third, Create an app whose web server and database server are both hosted in docker:
-
-```bash
-python /usr/equi/script/app_create.py -appid 1 -appname app1 -server_name www.yourdomain.com -password password
-```
-
+* Third, Create an app whose web server and database server are both hosted in docker, the paramters are:
   * appid, int, id of the app. port and ip of the container are related with appid.
   * appname, str, name of directory to host application files and database files.
   * server_name, the domain binded to the webserver.
   * password, the password of database user(postgres), and the password of super administator.  
+  
+```bash
+python /usr/equi/script/app_create.py -appid 1 -appname app1 -server_name www.yourdomain.com -password password
+```
 
 You can specify the appid, appname, server_name, and password your app by change the params in the last line of scripts above.
 
