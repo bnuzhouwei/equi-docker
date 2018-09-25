@@ -1,5 +1,7 @@
 # [Equiclouds](http://www.equiclouds.com/)
 
+![Admin](admin.png)
+
 ## Features
 
 Build better Web apps with CBSE by PaaS! 
