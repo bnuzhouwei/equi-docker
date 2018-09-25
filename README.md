@@ -13,7 +13,7 @@ A browser and a database tool can build the whole large web app:
 * Online Integrated Development Environment
   * Anytime, anywhere online coding, automatic preservation of historical version, intelligent dynamic compilation, detailed debug logs, lazy loading execution, code complement full code folding, grammar highlighting, full-screen mode, adaptive content size. You only need Web browsers and database management tools to build Web applications.
 
-## GetStarted
+## Get Started
 
 * First, buy a virtual server with Ubuntu Server 16.04/18.04 LTS X64 from any of the following cloud computing providers:
   * [Microsoft Azure](https://azure.microsoft.com/), [Amazon AWS](https://aws.amazon.com/)
@@ -77,3 +77,22 @@ python /usr/equi/script/app_create.py -appid 2 -appname app2 -server_name www.yo
 ```
 
 It is the world's premier Web development platform. Without setting up or managing any infrastructure, you only need to log on to start working. The component-based cloud development platform changes the development mode of Web application, and can create high quality Web applications faster and better. Have fun!
+
+## Advanced
+
+### Customize Docker Image for Database Server
+
+Before call setup.py, you can edit the Dockerfile,
+
+```bash
+vim /usr/equi/image/db/Dockerfile
+```
+
+Change parameters of localedef to change default collation and timezone.
+
+```
+FROM postgres:10
+RUN localedef -i zh_CN -c -f UTF-8 -A /usr/share/locale/locale.alias zh_CN.UTF-8
+ENV LANG zh_CN.UTF-8
+```
+
