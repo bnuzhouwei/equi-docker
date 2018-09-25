@@ -118,3 +118,21 @@ RUN rm /etc/localtime && ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 * ln: change timezone.
 
 
+### Customize Rule of Ports for Docker Containers
+
+```bash
+vim /usr/equi/script/app_create.py
+```
+
+The default rule is:
+
+```python
+    webport = 10000 + appid * 10 if appid else 80
+    dbport = 20000 + appid * 10 if appid else 5432
+```
+
+Change the two rows to customize rule of ports for docker containers.
+
+### Customize Ports for Docker Containers
+
+Just modify the docker-compose.yml file in /var/www/appname directory.
