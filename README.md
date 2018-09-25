@@ -42,6 +42,11 @@ python /usr/equi/script/setup.py
 python /usr/equi/script/app_create.py -appid 1 -appname app1 -server_name www.yourdomain.com -password password
 ```
 
+  * appid, int, id of the app. port and ip of the container are related with appid.
+  * appname, str, name of directory to host application files and database files.
+  * server_name, the domain binded to the webserver.
+  * password, the password of database user(postgres), and the password of super administator.  
+
 You can specify the appid, appname, server_name, and password your app by change the params in the last line of scripts above.
 
 When excuted, visit http://www.yourdomian.com to view the app. Of couse, you should first resolved the domain name to ip of the server. Otherwise your can visit http://yourserverip:10010 by ip and port!
