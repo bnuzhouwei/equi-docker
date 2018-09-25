@@ -54,9 +54,13 @@ docker ps -a
 
 * Forth, automantically start web and database services at system startup.
 
+Edit /etc/rc.local file,
+
 ```bash
 vim /etc/rc.local
 ```
+
+and execute start.py.
 
 ```
 sudo python /usr/equi/script/start.py
