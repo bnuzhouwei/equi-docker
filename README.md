@@ -52,7 +52,25 @@ docker-compose ps -a
 
 * Last, connect to the database server by database management tools(e.g. navicat, pgadmin) to create tables and views; login the develop platform by any browser(e.g. Chrome, Firfox, IE11+, Edge) to build web apps by assembling and integrating.
 
-> You could create many apps in a server without conflict:
+> Database Connection Parameters:
+
+```
+Host: got from admin interface of your cloud computing provider.
+Port: got from docker-compose ps -a
+Username: postgres
+Password: set by yourself as parameter of python /usr/equi/script/app_create.py.
+```
+
+> WebApp Login:
+
+```
+Username: equiclouds
+Password: set by yourself as parameter of python /usr/equi/script/app_create.py.
+```
+
+You can modify the password of WebAPP after login.
+
+* Tips: You could create many apps in a server without conflict:
 
 ```bash
 python /usr/equi/script/app_create.py -appid 2 -appname app2 -server_name www.yourdomain2.com -password password2
