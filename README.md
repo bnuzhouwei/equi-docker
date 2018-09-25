@@ -1,6 +1,6 @@
 # [Equiclouds](http://www.equiclouds.com/)
 
-
+![Admin](admin.png)
 
 ## Features
 
