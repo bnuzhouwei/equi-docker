@@ -151,3 +151,20 @@ Change the two rows to customize rule of ports for docker containers.
 ### Customize Ports for Docker Containers
 
 Just modify the docker-compose.yml file in /var/www/appname directory.
+
+### Customize Network for Docker Containers
+
+The ip of default network in template is "10.10.appid.1". If it has conflict with internal network IP of your server, you shoud change it.
+
+```bash
+vim /usr/equi/tmpl/docker-compose.yml
+```
+
+You need to make three changes in this file, e.g. config in web, db container, and networks nodes. The following address are available for internal network IP, you can choose any of the ranges that not conflict with your server.
+
+```
+10.0.0.0－10.255.255.255
+100.64.0.0－100.127.255.255
+172.16.0.0－172.31.255.255
+192.168.0.0－192.168.255.255
+```
