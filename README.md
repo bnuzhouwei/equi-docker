@@ -47,7 +47,7 @@ When excuted, visit http://www.yourdomian.com to view the app. Of couse, you sho
 > You can see the web server port and database server port with command:
 
 ```bash
-docker-compose ps -a
+docker ps -a
 ```
 
 * Last, connect to the database server by database management tools(e.g. navicat, pgadmin) to create tables and views; login the develop platform by any browser(e.g. Chrome, Firfox, IE11+, Edge) to build web apps by assembling and integrating.
